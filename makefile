@@ -37,7 +37,7 @@ $(BUILD64)/generator.o : $(SOURCE)/generator.cc $(INCLUDE)/generator.h
 	$(COMPILEW64) $< -o $@
 
 generator32.exe : $(BUILD32)/generator.o
-	$(LINKW32) $(BINARY)/$@ $^
+	$(LINKW84) $(BINARY)/$@ $^
 
 $(BUILD32)/generator.o : $(SOURCE)/generator.cc $(INCLUDE)/generator.h
 	$(COMPILEW84) $< -o $@
