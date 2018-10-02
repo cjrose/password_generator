@@ -43,4 +43,4 @@ $(BUILD32)/generator.o : $(SOURCE)/generator.cc $(INCLUDE)/generator.h
 	$(COMPILEW84) $< -o $@
 
 clean:
-	@rm $(BUILD)/* $(BUILD64)/* $(BUILD32)/* $(BINARY)/*
+	@rm $(BUILD)/*.o $(BUILD64)/*.o $(BUILD32)/*.o $(BINARY)/*
